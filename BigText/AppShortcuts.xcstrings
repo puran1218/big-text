@@ -1,98 +1,114 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Big Text" : {
+    "Show big text ${applicationName}" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Big Text"
+            "value" : "Show big text ${applicationName}"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "大字"
+            "value" : "显示大字 ${applicationName}"
           }
         }
       }
     },
-    "Show" : {
+    "Big text ${applicationName}" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show"
+            "value" : "Big text ${applicationName}"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "显示"
+            "value" : "大字 ${applicationName}"
           }
         }
       }
     },
-    "Back" : {
+    "Display ${applicationName}" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Back"
+            "value" : "Display ${applicationName}"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "返回"
+            "value" : "展示 ${applicationName}"
           }
         }
       }
     },
-    "Enter text to display" : {
+    "Show Big Text" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enter text to display"
+            "value" : "Show Big Text"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "输入要展示的文字"
+            "value" : "显示大字"
           }
         }
       }
     },
-    "Turn phone for better display" : {
+    "Displays text in full-screen." : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Turn phone for better display"
+            "value" : "Displays text in full-screen."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "横过手机展示更清楚"
+            "value" : "全屏显示文字。"
           }
         }
       }
     },
-    "Shake twice to toggle flash" : {
+    "Text" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Shake twice to toggle flash"
+            "value" : "Text"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "摇两下开启闪动"
+            "value" : "文字"
+          }
+        }
+      }
+    },
+    "The text to display in big letters." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The text to display in big letters."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "要展示的文字内容。"
           }
         }
       }

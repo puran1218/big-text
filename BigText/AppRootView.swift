@@ -31,5 +31,13 @@ struct AppRootView: View {
                 )
             }
         }
+        .onAppear {
+            // Check if launched from Siri App Intent
+            if let intentText = UserDefaults.standard.string(forKey: "intentText"), !intentText.isEmpty {
+                store.lastText = intentText
+                UserDefaults.standard.removeObject(forKey: "intentText")
+                mode = .displaying
+            }
+        }
     }
 }
