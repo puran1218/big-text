@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0001 /* BigTextApp.swift */ = {isa = PBXBuildFile; fileRef = AA0011; };
+		AA0002 /* AppRootView.swift */ = {isa = PBXBuildFile; fileRef = AA0012; };
+		AA0003 /* AppSettingsStore.swift */ = {isa = PBXBuildFile; fileRef = AA0013; };
+		AA0004 /* BigTextColors.swift */ = {isa = PBXBuildFile; fileRef = AA0014; };
+		AA0005 /* BigTextTypography.swift */ = {isa = PBXBuildFile; fileRef = AA0015; };
+		AA0006 /* BigTextSpacing.swift */ = {isa = PBXBuildFile; fileRef = AA0016; };
+		AA0007 /* BigTextInput.swift */ = {isa = PBXBuildFile; fileRef = AA0017; };
+		AA0008 /* PrimaryActionButton.swift */ = {isa = PBXBuildFile; fileRef = AA0018; };
+		AA0009 /* EditorView.swift */ = {isa = PBXBuildFile; fileRef = AA0019; };
+		AA0010 /* AutoFitTextView.swift */ = {isa = PBXBuildFile; fileRef = AA0020; };
+		AA0011A /* FlashOverlay.swift */ = {isa = PBXBuildFile; fileRef = AA0021; };
+		AA0012A /* DisplayHintToast.swift */ = {isa = PBXBuildFile; fileRef = AA0022; };
+		AA0013A /* BackControlOverlay.swift */ = {isa = PBXBuildFile; fileRef = AA0023; };
+		AA0014A /* DisplayView.swift */ = {isa = PBXBuildFile; fileRef = AA0024; };
+		AA0015A /* IdleTimerController.swift */ = {isa = PBXBuildFile; fileRef = AA0025; };
+		AA0016A /* ShakeDetector.swift */ = {isa = PBXBuildFile; fileRef = AA0026; };
+		AA0017A /* ShowBigTextIntent.swift */ = {isa = PBXBuildFile; fileRef = AA0027; };
+		AA0018A /* Localizable.xcstrings */ = {isa = PBXBuildFile; fileRef = AA0028; };
+		AA0019A /* AppShortcuts.xcstrings */ = {isa = PBXBuildFile; fileRef = AA0029; };
+		AA0020A /* Assets.xcassets */ = {isa = PBXBuildFile; fileRef = AA0030; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0000 /* BigText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0011 /* BigTextApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTextApp.swift; sourceTree = "<group>"; };
+		AA0012 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		AA0013 /* AppSettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsStore.swift; sourceTree = "<group>"; };
+		AA0014 /* BigTextColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTextColors.swift; sourceTree = "<group>"; };
+		AA0015 /* BigTextTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTextTypography.swift; sourceTree = "<group>"; };
+		AA0016 /* BigTextSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTextSpacing.swift; sourceTree = "<group>"; };
+		AA0017 /* BigTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTextInput.swift; sourceTree = "<group>"; };
+		AA0018 /* PrimaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryActionButton.swift; sourceTree = "<group>"; };
+		AA0019 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		AA0020 /* AutoFitTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFitTextView.swift; sourceTree = "<group>"; };
+		AA0021 /* FlashOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashOverlay.swift; sourceTree = "<group>"; };
+		AA0022 /* DisplayHintToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHintToast.swift; sourceTree = "<group>"; };
+		AA0023 /* BackControlOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackControlOverlay.swift; sourceTree = "<group>"; };
+		AA0024 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		AA0025 /* IdleTimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleTimerController.swift; sourceTree = "<group>"; };
+		AA0026 /* ShakeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetector.swift; sourceTree = "<group>"; };
+		AA0027 /* ShowBigTextIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBigTextIntent.swift; sourceTree = "<group>"; };
+		AA0028 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		AA0029 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
+		AA0030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA0031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0050 = {
+			isa = PBXGroup;
+			children = (
+				AA0051 /* BigText */,
+				AA0052 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0051 /* BigText */ = {
+			isa = PBXGroup;
+			children = (
+				AA0011 /* BigTextApp.swift */,
+				AA0012 /* AppRootView.swift */,
+				AA0060 /* Features */,
+				AA0061 /* Services */,
+				AA0062 /* Intents */,
+				AA0063 /* Data */,
+				AA0064 /* Design */,
+				AA0028 /* Localizable.xcstrings */,
+				AA0029 /* AppShortcuts.xcstrings */,
+				AA0030 /* Assets.xcassets */,
+				AA0031 /* Info.plist */,
+			);
+			path = BigText;
+			sourceTree = "<group>";
+		};
+		AA0052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000 /* BigText.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0060 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AA0065 /* Editor */,
+				AA0066 /* Display */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AA0065 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				AA0017 /* BigTextInput.swift */,
+				AA0018 /* PrimaryActionButton.swift */,
+				AA0019 /* EditorView.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		AA0066 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				AA0020 /* AutoFitTextView.swift */,
+				AA0021 /* FlashOverlay.swift */,
+				AA0022 /* DisplayHintToast.swift */,
+				AA0023 /* BackControlOverlay.swift */,
+				AA0024 /* DisplayView.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		AA0061 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA0025 /* IdleTimerController.swift */,
+				AA0026 /* ShakeDetector.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA0062 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				AA0027 /* ShowBigTextIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		AA0063 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AA0013 /* AppSettingsStore.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AA0064 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				AA0014 /* BigTextColors.swift */,
+				AA0015 /* BigTextTypography.swift */,
+				AA0016 /* BigTextSpacing.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0070 /* BigText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0080 /* Build configuration list for PBXNativeTarget "BigText" */;
+			buildPhases = (
+				AA0081 /* Sources */,
+				AA0040 /* Frameworks */,
+				AA0082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BigText;
+			productName = BigText;
+			productReference = AA0000 /* BigText.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0090 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA0070 = {
+						CreatedOnToolsVersion = 15.0;
+						SystemCapabilities = {
+							com.apple.AppIntents = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AA0091 /* Build configuration list for PBXProject "BigText" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = AA0050;
+			productRefGroup = AA0052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0070 /* BigText */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0020A /* Assets.xcassets */,
+				AA0018A /* Localizable.xcstrings */,
+				AA0019A /* AppShortcuts.xcstrings */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0001 /* BigTextApp.swift */,
+				AA0002 /* AppRootView.swift */,
+				AA0003 /* AppSettingsStore.swift */,
+				AA0004 /* BigTextColors.swift */,
+				AA0005 /* BigTextTypography.swift */,
+				AA0006 /* BigTextSpacing.swift */,
+				AA0007 /* BigTextInput.swift */,
+				AA0008 /* PrimaryActionButton.swift */,
+				AA0009 /* EditorView.swift */,
+				AA0010 /* AutoFitTextView.swift */,
+				AA0011A /* FlashOverlay.swift */,
+				AA0012A /* DisplayHintToast.swift */,
+				AA0013A /* BackControlOverlay.swift */,
+				AA0014A /* DisplayView.swift */,
+				AA0015A /* IdleTimerController.swift */,
+				AA0016A /* ShakeDetector.swift */,
+				AA0017A /* ShowBigTextIntent.swift */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA0100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "AccentColor";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "AccentColor";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA0110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BigText/Info.plist;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY UIRequiredDeviceCapabilities = "armv7 arm64";
+				INFOPLIST_KEY UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.bigtext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA0111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BigText/Info.plist;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY UIRequiredDeviceCapabilities = "armv7 arm64";
+				INFOPLIST_KEY UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.bigtext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0080 /* Build configuration list for PBXNativeTarget "BigText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0110 /* Debug */,
+				AA0111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0091 /* Build configuration list for PBXProject "BigText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0100 /* Debug */,
+				AA0101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA0090 /* Project object */;
+}
