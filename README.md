@@ -7,22 +7,29 @@ A minimal iOS utility that displays text as large as possible in full-screen.
 1. Type or paste text
 2. Tap "显示" / "Show"
 3. Full-screen black background, white text, as big as possible
+4. (v1.1) Shake twice to toggle flashing attention pulse
+5. (v1.1) Siri: "Hey Siri, big text I'm here"
 
 Use cases: noisy environments (concerts, restaurants), distance signaling (airport pickup, classroom), temporary signage.
 
-## v1.0 Status
+## Development Status
 
-🚧 **In Development** - Project structure complete, awaiting Xcode setup.
+✅ **Source Code Complete** (v1.0 + v1.1) - Awaiting Xcode setup
 
-### Completed
-- [x] Data layer (AppSettingsStore)
-- [x] Design tokens (Colors, Typography, Spacing)
-- [x] Editor view with input and button
-- [x] Display view with auto-fit text
-- [x] Idle timer control
-- [x] Landscape hint for portrait mode
-- [x] Bilingual strings (en + zh-Hans)
-- [x] Project structure
+### v1.0 Features
+- [x] Text input with restore last text
+- [x] Full-screen black/white display
+- [x] Auto-fit text sizing
+- [x] Landscape hint in portrait
+- [x] Idle timer disabled during display
+- [x] Tap to show back controls
+- [x] Bilingual (en + zh-Hans)
+
+### v1.1 Features
+- [x] Shake-to-flash (double-shake detection)
+- [x] Flash overlay (gentle pulse, not strobe)
+- [x] First-use shake hint
+- [x] Siri App Intent (voice activation)
 
 ### Pending
 - [ ] Apple Developer enrollment
@@ -32,9 +39,7 @@ Use cases: noisy environments (concerts, restaurants), distance signaling (airpo
 
 ## Two-Ship Strategy
 
-**v1.0** (current): Input → Display → Done. ~2 weekends.
-
-**v1.1** (after v1.0 ships): Shake-to-flash + Siri App Intent. ~2 more weekends.
+Both v1.0 and v1.1 source code are complete. Ship v1.0 first (fast approval), use it, then ship v1.1 (update).
 
 Rationale: Two App Store learning opportunities instead of one. Better dopamine schedule.
 
@@ -68,12 +73,35 @@ BigText/
  │
  ├── Features/
  │    ├── Editor/              # Input screen (portrait-only)
+ │    │   ├── EditorView.swift
+ │    │   ├── BigTextInput.swift
+ │    │   └── PrimaryActionButton.swift
+ │    │
  │    └── Display/             # Full-screen display (landscape-friendly)
+ │        ├── DisplayView.swift
+ │        ├── AutoFitTextView.swift
+ │        ├── FlashOverlay.swift       # v1.1
+ │        ├── DisplayHintToast.swift
+ │        └── BackControlOverlay.swift
  │
- ├── Services/                 # IdleTimer, Shake (v1.1)
- ├── Data/                     # AppSettingsStore
- ├── Design/                   # Colors, Typography, Spacing
- └── Localizable.xcstrings     # en + zh-Hans
+ ├── Intents/                  # v1.1
+ │    └── ShowBigTextIntent.swift  # Siri App Intent
+ │
+ ├── Services/
+ │    ├── ShakeDetector.swift  # v1.1 - Core Motion
+ │    ├── IdleTimerController.swift
+ │    └── (TextFitEngine.swift - future upgrade)
+ │
+ ├── Data/
+ │    └── AppSettingsStore.swift
+ │
+ ├── Design/
+ │    ├── BigTextColors.swift
+ │    ├── BigTextTypography.swift
+ │    └── BigTextSpacing.swift
+ │
+ ├── Localizable.xcstrings     # UI strings (en + zh-Hans)
+ └── AppShortcuts.xcstrings    # Siri phrases (en + zh-Hans)
 ```
 
 ## Design Philosophy

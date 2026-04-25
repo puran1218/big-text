@@ -182,7 +182,7 @@ BigText/
 
 ---
 
-## v1.0 Features (Current)
+## v1.0 Features (Complete)
 
 ✅ Text input with restore last text
 ✅ Full-screen black/white display
@@ -194,12 +194,14 @@ BigText/
 
 ---
 
-## v1.1 Features (After v1.0 ships)
+## v1.1 Features (Complete)
 
-⏳ ShakeDetector (double-shake to toggle flash)
-⏳ FlashOverlay (gentle pulse, not strobe)
-⏳ First-use shake hint
-⏳ Siri App Intent ("Hey Siri, big text I'm here")
+✅ ShakeDetector (double-shake to toggle flash)
+✅ FlashOverlay (gentle 2.5s pulse, not strobe)
+✅ First-use shake hint
+✅ Siri App Intent ("Hey Siri, big text I'm here")
+
+**All source code for v1.0 and v1.1 is complete and ready for Xcode setup.**
 
 ---
 
@@ -254,12 +256,15 @@ BigText/
 
 ---
 
-## Next Steps After v1.0 Ships
+## Next Steps
 
-1. **Use the app in real life** — concert, airport pickup, noisy bar
-2. Note what feels missing or awkward
-3. Build v1.1 with shake-flash + Siri App Intent
-4. Ship again (second learning opportunity!)
+1. **Set up Xcode project** (Steps 1-5 above)
+2. **Test v1.0 and v1.1 on real device**
+3. **Ship v1.0 to App Store** (minimal, fast approval)
+4. **Use the app in real life** — concert, airport pickup, noisy bar
+5. **Ship v1.1 update** with shake-flash + Siri
+
+**Both v1.0 and v1.1 source code are complete.** The two-ship strategy lets you learn the App Store pipeline twice.
 
 ---
 
