@@ -264,7 +264,7 @@
 					};
 					C6001A1B2C3D4E5F6789001 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = A6001A1B2C3D4E5F67890AA;
+						TestTargetID = C6001A1B2C3D4E5F6789001;
 					};
 				};
 			};
