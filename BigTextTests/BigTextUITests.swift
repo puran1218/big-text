@@ -70,6 +70,13 @@ final class BigTextUITests: XCTestCase {
 
     // MARK: - AppSettingsStore Tests
 
+    override func tearDown() {
+        // Clean up UserDefaults after AppSettingsStore tests
+        UserDefaults.standard.removeObject(forKey: "lastText")
+        UserDefaults.standard.removeObject(forKey: "hasSeenShakeHint")
+        super.tearDown()
+    }
+
     @MainActor
     func testAppSettingsStorePersistence() {
         // Given: A fresh AppSettingsStore
@@ -111,38 +118,21 @@ final class BigTextUITests: XCTestCase {
     // MARK: - IdleTimerController Tests
 
     func testIdleTimerController() {
+        // This test verifies that IdleTimerController.setDisabled(_:) can be called
+        // without errors. The actual UIApplication.shared.isIdleTimerDisabled property
+        // is being modified, but we cannot directly read or mock UIApplication in
+        // unit tests. In a full app context (integration/UI tests), this would
+        // prevent the device from sleeping while the app is in the foreground.
+
         // Given: The IdleTimerController enum
         // When: Setting idle timer disabled
         IdleTimerController.setDisabled(true)
 
-        // Then: Verify it doesn't crash
-        // Note: UIApplication.shared.isIdleTimerDisabled is a singleton property
-        // We can't easily test the actual value change without running in a full app context,
-        // but we can verify the API is callable without errors
-
         // When: Re-enabling idle timer
         IdleTimerController.setDisabled(false)
 
-        // Then: Should complete without error
-        // This test verifies the API is correctly structured and callable
-        XCTAssertTrue(true, "IdleTimerController API is callable")
-    }
-
-    func testIdleTimerControllerDisablesIdleTimer() {
-        // Given: Current idle timer state
-        // Note: We can't read the current state directly in tests,
-        // but we can verify setting it doesn't crash
-
-        // When/Then: Test setting true
-        IdleTimerController.setDisabled(true)
-
-        // When/Then: Test setting false
-        IdleTimerController.setDisabled(false)
-
-        // When/Then: Test toggling back
-        IdleTimerController.setDisabled(true)
-
-        // Verify the call sequence completes without errors
-        XCTAssertTrue(true, "Idle timer toggling completes successfully")
+        // Then: The API calls should complete without throwing
+        // Note: The actual behavior (preventing device sleep) can only be verified
+        // in integration tests or manual testing on a physical device/simulator.
     }
 }
