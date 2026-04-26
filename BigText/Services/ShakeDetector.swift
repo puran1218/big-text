@@ -60,7 +60,7 @@ struct ShakeStateMachine {
         state = .cooldown(until: now.addingTimeInterval(cooldownDuration))
     }
 
-    func reset() {
+    mutating func reset() {
         state = .idle
     }
 }
@@ -113,7 +113,7 @@ final class ShakeDetector: ObservableObject {
 
             // Check if this qualifies as a shake
             if magnitude >= self.shakeThreshold {
-                let event = ShakeEvent(timestamp: data.timestamp, acceleration: magnitude)
+                let event = ShakeEvent(timestamp: Date(), acceleration: magnitude)
                 let triggered = self.stateMachine.process(event: event, now: Date())
 
                 if triggered {

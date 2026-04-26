@@ -24,6 +24,8 @@
 		A1001A1B2C3D4E5F67890B9 /* BigTextColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2001A1B2C3D4E5F67890B9 /* BigTextColors.swift */; };
 		A1001A1B2C3D4E5F67890BA /* BigTextTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2001A1B2C3D4E5F67890BA /* BigTextTypography.swift */; };
 		A1001A1B2C3D4E5F67890BB /* BigTextSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2001A1B2C3D4E5F67890BB /* BigTextSpacing.swift */; };
+		A1001A1B2C3D4E5F67890BC /* AppIntents in Frameworks */ = {isa = PBXBuildFile; productRef = A4001A1B2C3D4E5F67890BC /* AppIntents */; };
+		A1001A1B2C3D4E5F67890BD /* SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A4001A1B2C3D4E5F67890BD /* SwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +48,7 @@
 		A2001A1B2C3D4E5F67890BA /* BigTextTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTextTypography.swift; sourceTree = "<group>"; };
 		A2001A1B2C3D4E5F67890BB /* BigTextSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTextSpacing.swift; sourceTree = "<group>"; };
 		A2001A1B2C3D4E5F67890BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2001A1B2C3D4E5F67890BF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A2001A1B2C3D4E5F67890BF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A2001A1B2C3D4E5F67890C0 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1001A1B2C3D4E5F67890BC /* AppIntents in Frameworks */,
+				A1001A1B2C3D4E5F67890BD /* SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +264,7 @@
 		A6001A1B2C3D4E5F67890C0 /* Assets.xcassets */ = {
 			isa = PBXFileReference;
 			lastKnownFileType = folder.assetcatalog;
-			path = "";
+			path = Assets.xcassets;
 			sourceTree = "<group>";
 		};
 /* End PBXFileReference section for folder reference */
@@ -437,7 +441,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -469,7 +472,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -496,7 +498,29 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin PBXProductDependency section */
+		A4001A1B2C3D4E5F67890BC /* AppIntents */ = {
+			isa = PBXProductDependency;
+			product = AppIntents;
+		};
+		A4001A1B2C3D4E5F67890BD /* SwiftUI */ = {
+			isa = PBXProductDependency;
+			product = SwiftUI;
+		};
+/* End PBXProductDependency section */
 
+/* Begin XCSwiftPackageProductDependency section */
+		A4001A1B2C3D4E5F67890BC /* AppIntents */ = {
+			isa = XCSwiftPackageProductDependency;
+			packageName = AppIntents;
+			productName = AppIntents;
+		};
+		A4001A1B2C3D4E5F67890BD /* SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			packageName = SwiftUI;
+			productName = SwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 	};
 	rootObject = A6501A1B2C3D4E5F67890AA /* Project object */;
