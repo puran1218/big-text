@@ -24,7 +24,22 @@
 		A1001A1B2C3D4E5F67890B9 /* BigTextColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2001A1B2C3D4E5F67890B9 /* BigTextColors.swift */; };
 		A1001A1B2C3D4E5F67890BA /* BigTextTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2001A1B2C3D4E5F67890BA /* BigTextTypography.swift */; };
 		A1001A1B2C3D4E5F67890BB /* BigTextSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2001A1B2C3D4E5F67890BB /* BigTextSpacing.swift */; };
+		C7001A1B2C3D4E5F6789001 /* BigTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2001A1B2C3D4E5F6789001 /* BigTextTests.swift */; };
+		C7001A1B2C3D4E5F6789002 /* ShakeStateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2001A1B2C3D4E5F6789002 /* ShakeStateMachineTests.swift */; };
+		C7001A1B2C3D4E5F6789003 /* ShowBigTextIntentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2001A1B2C3D4E5F6789003 /* ShowBigTextIntentTests.swift */; };
+		C7001A1B2C3D4E5F6789004 /* BigTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2001A1B2C3D4E5F6789004 /* BigTextUITests.swift */; };
+		C7001A1B2C3D4E5F6789005 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2001A1B2C3D4E5F6789005 /* XCTest.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4001A1B2C3D4E5F6789001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6501A1B2C3D4E5F67890AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalID = A6001A1B2C3D4E5F67890AA;
+			remoteInfo = BigText;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A0001A1B2C3D4E5F67890AA /* BigText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigText.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +63,12 @@
 		A2001A1B2C3D4E5F67890BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2001A1B2C3D4E5F67890BF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A2001A1B2C3D4E5F67890C0 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
+		C2001A1B2C3D4E5F6789000 /* BigTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2001A1B2C3D4E5F6789001 /* BigTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTextTests.swift; sourceTree = "<group>"; };
+		C2001A1B2C3D4E5F6789002 /* ShakeStateMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeStateMachineTests.swift; sourceTree = "<group>"; };
+		C2001A1B2C3D4E5F6789003 /* ShowBigTextIntentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBigTextIntentTests.swift; sourceTree = "<group>"; };
+		C2001A1B2C3D4E5F6789004 /* BigTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTextUITests.swift; sourceTree = "<group>"; };
+		C2001A1B2C3D4E5F6789005 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +79,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3001A1B2C3D4E5F6789001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7001A1B2C3D4E5F6789005 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				A5001A1B2C3D4E5F67890AB /* BigText */,
+				A5001A1B2C3D4E5F67890D0 /* BigTextTests */,
 				A5001A1B2C3D4E5F67890AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				A0001A1B2C3D4E5F67890AA /* BigText.app */,
+				C2001A1B2C3D4E5F6789000 /* BigTextTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +200,17 @@
 			path = Display;
 			sourceTree = "<group>";
 		};
+		A5001A1B2C3D4E5F67890D0 /* BigTextTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2001A1B2C3D4E5F6789001 /* BigTextTests.swift */,
+				C2001A1B2C3D4E5F6789002 /* ShakeStateMachineTests.swift */,
+				C2001A1B2C3D4E5F6789003 /* ShowBigTextIntentTests.swift */,
+				C2001A1B2C3D4E5F6789004 /* BigTextUITests.swift */,
+			);
+			path = BigTextTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,6 +231,24 @@
 			productReference = A0001A1B2C3D4E5F67890AA /* BigText.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C6001A1B2C3D4E5F6789001 /* BigTextTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9001A1B2C3D4E5F6789001 /* Build configuration list for PBXNativeTarget "BigTextTests" */;
+			buildPhases = (
+				C7001A1B2C3D4E5F6789006 /* Sources */,
+				C3001A1B2C3D4E5F6789001 /* Frameworks */,
+				C8001A1B2C3D4E5F6789001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6001A1B2C3D4E5F6789002 /* PBXTargetDependency */,
+			);
+			name = BigTextTests;
+			productName = BigTextTests;
+			productReference = C2001A1B2C3D4E5F6789000 /* BigTextTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +261,10 @@
 				TargetAttributes = {
 					A6001A1B2C3D4E5F67890AA = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					C6001A1B2C3D4E5F6789001 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A6001A1B2C3D4E5F67890AA;
 					};
 				};
 			};
@@ -218,6 +282,7 @@
 			projectRoot = "";
 			targets = (
 				A6001A1B2C3D4E5F67890AA /* BigText */,
+				C6001A1B2C3D4E5F6789001 /* BigTextTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,9 +297,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8001A1B2C3D4E5F6789001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXResourcesBuildPhase section for variant group */ 
+/* Begin PBXResourcesBuildPhase section for variant group */
 		A1001A1B2C3D4E5F67890C1 /* Assets.xcassets in Resources */ = {
 			isa = PBXBuildFile;
 			fileRef = A5001A1B2C3D4E5F67890C3 /* Assets.xcassets */;
@@ -290,7 +362,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7001A1B2C3D4E5F6789006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7001A1B2C3D4E5F6789001 /* BigTextTests.swift in Sources */,
+				C7001A1B2C3D4E5F6789002 /* ShakeStateMachineTests.swift in Sources */,
+				C7001A1B2C3D4E5F6789003 /* ShowBigTextIntentTests.swift in Sources */,
+				C7001A1B2C3D4E5F6789004 /* BigTextUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6001A1B2C3D4E5F6789002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6001A1B2C3D4E5F67890AA /* BigText */;
+			targetProxy = C4001A1B2C3D4E5F6789001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BA001A1B2C3D4E5F67890AA /* Debug */ = {
@@ -473,6 +564,46 @@
 			};
 			name = Release;
 		};
+		DA001A1B2C3D4E5F67890D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.bigtext.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigText.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BigText";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA001A1B2C3D4E5F67890D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.bigtext.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigText.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BigText";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -490,6 +621,15 @@
 			buildConfigurations = (
 				BA001A1B2C3D4E5F67890AC /* Debug */,
 				BA001A1B2C3D4E5F67890AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9001A1B2C3D4E5F6789001 /* Build configuration list for PBXNativeTarget "BigTextTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA001A1B2C3D4E5F67890D0 /* Debug */,
+				DA001A1B2C3D4E5F67890D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
