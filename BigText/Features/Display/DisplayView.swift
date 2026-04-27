@@ -56,12 +56,16 @@ struct DisplayView: View {
 
             // Show shake hint on first use
             if !hasSeenShakeHint {
-                showShakeHint = true
+                withAnimation(.easeOut(duration: 0.3)) {
+                    showShakeHint = true
+                }
 
-                // Auto-hide hint after 2.5 seconds
+                // Auto-hide hint after 2.5 seconds with fade out
                 Task {
                     try? await Task.sleep(nanoseconds: 2_500_000_000)
-                    showShakeHint = false
+                    withAnimation(.easeOut(duration: 0.3)) {
+                        showShakeHint = false
+                    }
                     hasSeenShakeHint = true
                 }
             }

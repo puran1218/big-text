@@ -14,7 +14,6 @@ struct DisplayHintToast: View {
                 .background(BigTextColors.controlBackground)
                 .cornerRadius(20)
                 .transition(.opacity)
-                .padding(.bottom, 100)
         }
     }
 }
