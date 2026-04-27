@@ -96,6 +96,22 @@
           }
         }
       }
+    },
+    "editor.characterCount" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d/200"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d/200"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
