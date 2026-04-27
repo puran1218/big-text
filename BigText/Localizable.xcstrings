@@ -1,7 +1,7 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Big Text" : {
+    "app.title" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -17,7 +17,23 @@
         }
       }
     },
-    "Show" : {
+    "app.subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type one line. Show it big."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入一句话，全屏放大给别人看"
+          }
+        }
+      }
+    },
+    "editor.showButton" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -33,7 +49,23 @@
         }
       }
     },
-    "Back" : {
+    "editor.placeholder" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter text to display"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入要显示的文字"
+          }
+        }
+      }
+    },
+    "display.backButton" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -49,23 +81,7 @@
         }
       }
     },
-    "Enter text to display" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enter text to display"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "输入要展示的文字"
-          }
-        }
-      }
-    },
-    "Turn phone for better display" : {
+    "display.landscapeHint" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -81,7 +97,7 @@
         }
       }
     },
-    "Shake twice to toggle flash" : {
+    "display.shakeHint" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {

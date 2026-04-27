@@ -27,7 +27,7 @@ struct DisplayView: View {
             VStack {
                 Spacer()
                 DisplayHintToast(
-                    message: "Turn phone for better display",
+                    message: "display.landscapeHint",
                     isVisible: verticalSizeClass == .regular && showLandscapeHint
                 )
                 .padding(.bottom, 40)
@@ -37,7 +37,7 @@ struct DisplayView: View {
             VStack {
                 Spacer()
                 DisplayHintToast(
-                    message: "Shake twice to toggle flash",
+                    message: "display.shakeHint",
                     isVisible: showShakeHint
                 )
                 .padding(.bottom, showLandscapeHint && verticalSizeClass == .regular ? 80 : 40)

@@ -11,7 +11,7 @@ struct EditorView: View {
     var body: some View {
         VStack(spacing: BigTextSpacing.pagePadding) {
             // App Title
-            Text("Big Text", bundle: .main)
+            Text("app.title", bundle: .main)
                 .font(BigTextTypography.appTitle)
                 .foregroundStyle(BigTextColors.textPrimary)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -26,7 +26,7 @@ struct EditorView: View {
 
             // Show Button
             PrimaryActionButton(
-                title: "Show",
+                title: "editor.showButton",
                 isEnabled: !isTextEmpty,
                 action: onShow
             )

@@ -10,7 +10,7 @@ struct BigTextInput: View {
         VStack(spacing: 0) {
             ZStack(alignment: .topLeading) {
                 if text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                    Text("Enter text to display", bundle: .main)
+                    Text("editor.placeholder", bundle: .main)
                         .font(BigTextTypography.inputText)
                         .foregroundStyle(BigTextColors.textSecondary)
                         .padding(.horizontal, BigTextSpacing.inputPadding)

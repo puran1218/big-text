@@ -11,7 +11,7 @@ struct BackControlOverlay: View {
                     Button(action: onBack) {
                         HStack(spacing: 6) {
                             Image(systemName: "chevron.left")
-                            Text("Back", bundle: .main)
+                            Text("display.backButton", bundle: .main)
                         }
                         .font(BigTextTypography.hintText)
                         .foregroundStyle(BigTextColors.textPrimary)
