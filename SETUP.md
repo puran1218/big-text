@@ -5,17 +5,48 @@
 - [x] Project structure created
 - [ ] **Apple Developer Program enrollment** - DO TODAY ($99/year)
 - [ ] Xcode installed (15.x or later)
-- [ ] Bundle ID decided (currently using temporary: `com.example.bigtext`)
+- [ ] Bundle ID decided (currently using placeholder: `com.example.bigtext`)
+- [ ] Development team configured in Xcode
+
+### Code Signing Status
+
+Current configuration:
+- **Bundle ID:** `com.example.bigtext` (placeholder - requires change)
+- **Development Team:** Not configured (requires Apple Developer enrollment)
+- **Code Signing Style:** Automatic (ready for proper team)
+
+**Action Required:** Enroll in Apple Developer Program and configure team in Xcode before App Store submission.
 
 ---
 
 ## Step 1: Enroll in Apple Developer Program ⚠️ CRITICAL
 
-1. Go to **developer.apple.com/programs**
-2. Click "Enroll" → **Individual** enrollment (recommended for solo)
-3. Sign in with your Apple ID
-4. Pay $99/year
-5. **Wait for email confirmation** (24-48 hours best case, 1-2 weeks worst case)
+### Why You Need It
+
+- **Required for:** App Store distribution, TestFlight beta testing, real device testing
+- **Cost:** $99/year for Individual enrollment
+- **Processing time:** 24-48 hours (best case) to 1-2 weeks
+
+### Enrollment Steps
+
+1. Go to **[developer.apple.com/programs](https://developer.apple.com/programs)**
+2. Click **"Enroll"**
+3. Choose **"Individual"** enrollment (recommended for solo developers)
+   - "Organization" requires D-U-N-S number and legal documentation
+4. Sign in with your Apple ID
+5. Complete the enrollment form and payment ($99/year)
+6. **Wait for email confirmation** before proceeding
+
+### After Enrollment
+
+Once you receive confirmation:
+1. Open **Xcode**
+2. Open the **BigText.xcodeproj** project
+3. Select the **BigText** project in the navigator
+4. Choose the **BigText** target
+5. Go to **Signing & Capabilities** tab
+6. Under **Team**, click the dropdown and select your Apple Developer account
+7. Xcode will automatically generate provisioning profiles
 
 **You cannot submit to App Store without this. Start TODAY.**
 
@@ -31,20 +62,35 @@
 
 ---
 
-## Step 3: Choose Your Bundle ID
+## Step 3: Choose Your Bundle Identifier
 
-**Current temporary:** `com.example.bigtext`
+### Current Placeholder
 
-**You MUST change this before App Store submission.**
+**Current:** `com.example.bigtext` ❌ **Cannot be used for App Store**
 
-Format: `com.<your-domain-or-handle>.bigtext`
+### Bundle ID Format
 
-Examples:
+Reverse-domain notation: `com.<your-domain-or-handle>.<app-name>`
+
+**Examples:**
 - `com.johndoe.bigtext`
 - `com.mywebsite.bigtext`
 - `com.githubusername.bigtext`
 
-**This is PERMANENT after first App Store submission.**
+### How to Change Bundle ID
+
+1. In Xcode, select the **BigText** project
+2. Choose the **BigText** target
+3. Go to **General** tab
+4. Find **Bundle Identifier**
+5. Replace `com.example.bigtext` with your chosen bundle ID
+
+### Important Notes
+
+- The bundle ID is **permanent after first App Store submission**
+- Choose wisely - you cannot change it later without creating a new app
+- The bundle ID must be unique across all App Store apps
+- Check availability at **[App Store Connect](https://appstoreconnect.apple.com)** before finalizing
 
 ---
 
@@ -236,6 +282,134 @@ BigText/
 
 ---
 
+## Code Signing Configuration
+
+### Current Status
+
+The project currently has these code signing settings:
+- **Bundle Identifier:** `com.example.bigtext` (placeholder - MUST be changed)
+- **Development Team:** Empty (requires Apple Developer enrollment)
+- **Code Signing Style:** Automatic (ready for proper team configuration)
+
+### Code Signing Error
+
+When building without a development team, you will see:
+```
+Signing for "BigText" requires a development team.
+Select a development team in the Signing & Capabilities editor.
+```
+
+This is expected and will be resolved after Apple Developer enrollment.
+
+---
+
+## Step 1: Enroll in Apple Developer Program ⚠️ CRITICAL
+
+### Why You Need It
+
+- **Required for:** App Store distribution, TestFlight beta testing, real device testing
+- **Cost:** $99/year for Individual enrollment
+- **Processing time:** 24-48 hours (best case) to 1-2 weeks
+
+### Enrollment Steps
+
+1. Go to **[developer.apple.com/programs](https://developer.apple.com/programs)**
+2. Click **"Enroll"**
+3. Choose **"Individual"** enrollment (recommended for solo developers)
+   - "Organization" requires D-U-N-S number and legal documentation
+4. Sign in with your Apple ID
+5. Complete the enrollment form and payment ($99/year)
+6. **Wait for email confirmation** before proceeding
+
+### After Enrollment
+
+Once you receive confirmation:
+1. Open **Xcode**
+2. Open the **BigText.xcodeproj** project
+3. Select the **BigText** project in the navigator
+4. Choose the **BigText** target
+5. Go to **Signing & Capabilities** tab
+6. Under **Team**, click the dropdown and select your Apple Developer account
+7. Xcode will automatically generate provisioning profiles
+
+---
+
+## Step 2: Choose Your Bundle Identifier
+
+### Current Placeholder
+
+**Current:** `com.example.bigtext` ❌ **Cannot be used for App Store**
+
+### Bundle ID Format
+
+Reverse-domain notation: `com.<your-domain-or-handle>.<app-name>`
+
+**Examples:**
+- `com.johndoe.bigtext`
+- `com.mywebsite.bigtext`
+- `com.githubusername.bigtext`
+
+### How to Change Bundle ID
+
+1. In Xcode, select the **BigText** project
+2. Choose the **BigText** target
+3. Go to **General** tab
+4. Find **Bundle Identifier**
+5. Replace `com.example.bigtext` with your chosen bundle ID
+
+### Important Notes
+
+- The bundle ID is **permanent after first App Store submission**
+- Choose wisely - you cannot change it later without creating a new app
+- The bundle ID must be unique across all App Store apps
+- Check availability at **[App Store Connect](https://appstoreconnect.apple.com)** before finalizing
+
+---
+
+## Code Signing for Development vs. Distribution
+
+### Development (Free Apple ID)
+
+You can run on simulator with a free Apple ID, but:
+- No real device testing
+- No TestFlight distribution
+- No App Store submission
+
+### Distribution (Apple Developer Required)
+
+With Apple Developer Program enrollment:
+- Test on real devices
+- Distribute via TestFlight (up to 10,000 beta testers)
+- Submit to App Store
+- Automatic code signing manages certificates
+
+---
+
+## Troubleshooting Code Signing
+
+### "No signing certificate found"
+
+After enrolling:
+1. In Xcode, go to **Preferences > Accounts**
+2. Select your Apple ID
+3. Click **"Download Manual Profiles"** if needed
+4. Clean build folder: **Product > Clean Build Folder** (⇧⌘K)
+
+### Bundle ID already taken
+
+If your chosen bundle ID is unavailable:
+1. Try a variation (add numbers, use different format)
+2. Check if you already reserved it in App Store Connect
+3. Use a sub-domain: `com.<domain>.apps.bigtext`
+
+### Team not appearing in dropdown
+
+1. Verify enrollment is complete (check email)
+2. In Xcode **Preferences > Accounts**, sign out and sign back in
+3. Ensure you're using the same Apple ID used for enrollment
+
+---
+
 ## Common Issues
 
 ### "No such module 'UIKit'"
@@ -253,6 +427,11 @@ BigText/
 ### Portrait/landscape not working as expected
 - v1.0 uses portrait-with-hint approach (simpler)
 - Force-landscape deferred to v1.1 if needed
+
+### Code signing errors
+- Verify Apple Developer enrollment is complete
+- Check that Team is selected in Signing & Capabilities
+- Try cleaning build folder and rebuilding
 
 ---
 
