@@ -247,7 +247,17 @@ BigText/
 ✅ First-use shake hint
 ✅ Siri App Intent ("Hey Siri, big text I'm here")
 
-**All source code for v1.0 and v1.1 is complete and ready for Xcode setup.**
+---
+
+## v1.2 Features (Complete)
+
+✅ Character limit: 200 max with "X/200" counter
+✅ Counter turns red at 180+ characters
+✅ Bilingual title area: "大字" + "Big Text" dual display
+✅ Full localization: all UI strings in en + zh-Hans
+✅ Tagline: "Type one line. Show it big." / "输入一句话，全屏放大给别人看"
+
+**All source code for v1.0, v1.1, and v1.2 is complete and ready for Xcode setup.**
 
 ---
 
@@ -303,36 +313,7 @@ This is expected and will be resolved after Apple Developer enrollment.
 
 ---
 
-## Step 1: Enroll in Apple Developer Program ⚠️ CRITICAL
-
-### Why You Need It
-
-- **Required for:** App Store distribution, TestFlight beta testing, real device testing
-- **Cost:** $99/year for Individual enrollment
-- **Processing time:** 24-48 hours (best case) to 1-2 weeks
-
-### Enrollment Steps
-
-1. Go to **[developer.apple.com/programs](https://developer.apple.com/programs)**
-2. Click **"Enroll"**
-3. Choose **"Individual"** enrollment (recommended for solo developers)
-   - "Organization" requires D-U-N-S number and legal documentation
-4. Sign in with your Apple ID
-5. Complete the enrollment form and payment ($99/year)
-6. **Wait for email confirmation** before proceeding
-
-### After Enrollment
-
-Once you receive confirmation:
-1. Open **Xcode**
-2. Open the **BigText.xcodeproj** project
-3. Select the **BigText** project in the navigator
-4. Choose the **BigText** target
-5. Go to **Signing & Capabilities** tab
-6. Under **Team**, click the dropdown and select your Apple Developer account
-7. Xcode will automatically generate provisioning profiles
-
----
+## Step 2: Choose Your Bundle Identifier
 
 ## Step 2: Choose Your Bundle Identifier
 

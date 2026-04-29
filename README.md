@@ -4,17 +4,17 @@ A minimal iOS utility that displays text as large as possible in full-screen.
 
 ## What It Does
 
-1. Type or paste text
+1. Type or paste text (max 200 characters)
 2. Tap "显示" / "Show"
 3. Full-screen black background, white text, as big as possible
-4. (v1.1) Shake twice to toggle flashing attention pulse
-5. (v1.1) Siri: "Hey Siri, big text I'm here"
+4. Shake twice to toggle flashing attention pulse
+5. Siri: "Hey Siri, big text I'm here"
 
 Use cases: noisy environments (concerts, restaurants), distance signaling (airport pickup, classroom), temporary signage.
 
 ## Development Status
 
-✅ **Source Code Complete** (v1.0 + v1.1) - Awaiting Xcode setup
+✅ **Source Code Complete** (v1.2) - Ready for Xcode setup
 
 ### v1.0 Features
 - [x] Text input with restore last text
@@ -31,9 +31,15 @@ Use cases: noisy environments (concerts, restaurants), distance signaling (airpo
 - [x] First-use shake hint
 - [x] Siri App Intent (voice activation)
 
+### v1.2 Features (2026-04-28)
+- [x] Character limit: 200 max with "X/200" counter
+- [x] Counter turns red at 180+ characters
+- [x] Bilingual title area: "大字" + "Big Text" dual display
+- [x] Full localization: all UI strings in en + zh-Hans
+- [x] Tagline: "Type one line. Show it big." / "输入一句话，全屏放大给别人看"
+
 ### Pending
 - [ ] Apple Developer enrollment
-- [ ] Xcode project creation
 - [ ] Real device testing
 - [ ] App Store submission
 

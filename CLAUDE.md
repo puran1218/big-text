@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-BigText is a minimal iOS utility app built with SwiftUI. Type or paste text, tap "Show", and the text displays full-screen in black/white with auto-fitting font size. v1.1 adds shake-to-flash (double shake toggles a gentle pulse) and Siri voice activation.
+BigText is a minimal iOS utility app built with SwiftUI. Type or paste text (max 200 chars), tap "显示/Show", and the text displays full-screen in black/white with auto-fitting font size. v1.1 adds shake-to-flash (double shake toggles a gentle pulse) and Siri voice activation. v1.2 adds character limit, counter, and full bilingual UI.
 
 **Design Philosophy:** 越少越好. Type, show, done. No themes, no history, no accounts.
 
@@ -73,12 +73,21 @@ The shake detector is split into **testable pure logic** and **UIKit wrapper**:
 ```
 BigText/
  ├── Features/Editor/      # Input screen (portrait-locked)
+ │   ├── EditorView.swift  # Bilingual title area (大字/Big Text)
+ │   └── BigTextInput.swift # 200 char limit with counter
  ├── Features/Display/     # Full-screen display (landscape-friendly)
  ├── Services/             # ShakeDetector, IdleTimerController
  ├── Data/                 # AppSettingsStore (@AppStorage wrapper)
  ├── Design/               # Colors, Typography, Spacing constants
  └── Intents/              # ShowBigTextIntent (Siri App Intent)
 ```
+
+### Character Limit (BigTextInput)
+
+- **Max characters:** 200
+- **Counter display:** "X/200" at bottom-right of input area
+- **Visual warning:** Counter turns red at 180+ characters
+- **Enforcement:** Auto-trims input when exceeding limit
 
 ### Key Design Patterns
 
@@ -90,7 +99,21 @@ BigText/
 
 ## Localization
 
-Bilingual support via `Localizable.xcstrings` (String Catalog). Keys are referenced using `LocalizableStringResource` or localized string literals. Strings exist in both `en` and `zh-Hans`.
+Bilingual support via `Localizable.xcstrings` (String Catalog). UI follows iOS system language (Settings → General → Language). All strings exist in both `en` and `zh-Hans`.
+
+**Localized keys:**
+- `app.title` - "Big Text" / "大字"
+- `app.subtitle` - "Type one line. Show it big." / "输入一句话，全屏放大给别人看"
+- `editor.showButton` - "Show" / "显示"
+- `editor.placeholder` - "Enter text to display" / "输入要显示的文字"
+- `editor.characterCount` - "%d/200"
+- `display.landscapeHint` - "Turn phone for better display" / "横过手机展示更清楚"
+- `display.shakeHint` - "Shake twice to toggle flash" / "摇两下开启闪动"
+- `display.backButton` - "Back" / "返回"
+
+**Title area behavior:**
+- Shows one title based on system language: "大字" (Chinese) or "Big Text" (English)
+- Follows iOS Settings → General → Language
 
 ---
 
@@ -123,4 +146,4 @@ Siri shortcut "Show big text [text]" stores to `UserDefaults.standard` with key 
 - **BigTextUITests.swift** (6 tests) - UI component unit tests
 - **BigTextTests.swift** (1 test) - Entry point
 
-All tests pass in ~0.6 seconds on simulator.
+All 29 tests pass in ~0.7 seconds on simulator.
