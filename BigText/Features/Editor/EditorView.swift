@@ -10,31 +10,18 @@ struct EditorView: View {
         text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 
-    private var isChineseLanguage: Bool {
-        locale.language.languageCode?.identifier == "zh"
-    }
-
-    private var mainTitle: String {
-        isChineseLanguage ? "大字" : "Big Text"
-    }
-
-    private var subtitle: String {
-        isChineseLanguage ? "Big Text" : "大字"
+    private var appTitle: String {
+        locale.language.languageCode?.identifier == "zh" ? "大字" : "Big Text"
     }
 
     var body: some View {
         VStack(spacing: BigTextSpacing.pagePadding) {
             // App Title Area
             VStack(alignment: .leading, spacing: 4) {
-                // Main title
-                Text(mainTitle)
+                // Title
+                Text(appTitle)
                     .font(BigTextTypography.appTitle)
                     .foregroundStyle(BigTextColors.textPrimary)
-
-                // Subtitle (other language)
-                Text(subtitle)
-                    .font(.system(size: 18, weight: .medium, design: .rounded))
-                    .foregroundStyle(BigTextColors.textSecondary)
 
                 // Tagline
                 Text("app.subtitle", bundle: .main)
