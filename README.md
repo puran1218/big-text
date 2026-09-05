@@ -16,6 +16,10 @@ Use cases: noisy environments (concerts, restaurants), distance signaling (airpo
 
 ✅ **Source Code Complete** (v1.2) - Ready for Xcode setup
 
+📱 **Web/PWA version available** — [`../microblog-bigtext`](../microblog-bigtext/)
+ships the same experience (double-tap flash instead of shake, plus themes) as a
+micro.blog static-page plugin, no Apple Developer account required.
+
 ### v1.0 Features
 - [x] Text input with restore last text
 - [x] Full-screen black/white display
